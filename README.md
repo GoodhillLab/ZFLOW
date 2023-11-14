@@ -23,5 +23,9 @@ Following successful preprocessing, the swim bout should be in a similar form to
 	+ `examplespline.txt` contains tracking points on the 3D fish during simulation, which is used during validation
 2. Navigate to `postprocess/postprocess.m`, and run the post-processing functions
 
+## Requirements
+
+This code requires MATLAB (tested on R2021b --- R2023b) for the pre/postprocessing, `make` or `cmake` and [IBAMR](https://ibamr.github.io) library for the main CFD simulation.
+
 ## Contact
 Thomas Darveniza darveniza.t@wustl.edu
