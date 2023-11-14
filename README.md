@@ -1,6 +1,7 @@
 # Zebrafish Fluid-dynamics Locomotion Optimization Workspace (ZFLOW)
 
-C++ code for running CFD simulation of larval zebrafish, and MATLAB code for preprocessing and postprocessing
+C++ code for running CFD simulation of larval zebrafish, and MATLAB code for preprocessing and postprocessing.
+See the companion preprint [**Behavioral adaptation to changing energy constraints via altered frequency of movement selection**](https://www.biorxiv.org/content/10.1101/2023.11.08.566262v1) by Thomas Darveniza, Shuyu I Zhu, Zac Pujic, Biao Sun, Matthew Levendosky, Robert Wong, Ramesh Agarwal, Michael H McCullough, Geoffrey J Goodhill for more information.
 
 ## Overview
 
