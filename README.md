@@ -12,10 +12,8 @@ Preprocess the swim bout according to steps described in the paper.
 Following successful preprocessing, the swim bout should be in a similar form to /simulation/zebrafish_2D_coords.txt. (To better understand this form, run the script preprocess/preSimVis.m)
 
 ## Simulation
-1. Download and install [IBAMR](https://ibamr.github.io) on your local computer. Alternatively, [docker containers](https://hub.docker.com/repository/docker/d0ckaaa/ibamr) have also been made available by other IBAMR users.
-2. Navigate to `simulation` folder.
-3. Adjust the `Makefile` for your specific system.
-4. Make and run the executable (run-time of this example on an Intel Cascade Lake core is approximately 1-2 hours).
+
+See [simulation/README.md](simulation/README.md)
 
 ## Postprocessing
 1. Following successful simulation, there should be two new folders: `ZFISH3d`, and `examplespline.txt`.
@@ -25,7 +23,7 @@ Following successful preprocessing, the swim bout should be in a similar form to
 
 ## Requirements
 
-This code requires MATLAB (tested on R2021b --- R2023b) for the pre/postprocessing, `make` or `cmake` and [IBAMR](https://ibamr.github.io) library for the main CFD simulation.
+This code requires MATLAB (tested on R2021b&ndash;R2023b) for the pre/postprocessing, `make` or `cmake` and [IBAMR](https://ibamr.github.io) library (tested on 0.{8,9,13,14}.0, currently 0.14.0 is used) for the main CFD simulation.
 
 ## Contact
 Thomas Darveniza darveniza.t@wustl.edu
