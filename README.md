@@ -1,6 +1,6 @@
 # Zebrafish Fluid-dynamics Locomotion Optimization Workspace (ZFLOW)
 
-C++ code for running CFD simulation of larval zebrafish, and MATLAB code for preprocessing and postprocessing.
+C++ code for running Computational fluid dynamics (CFD) simulation of larval zebrafish, and MATLAB code for preprocessing and postprocessing.
 See the companion preprint [**Behavioral adaptation to changing energy constraints via altered frequency of movement selection**](https://www.biorxiv.org/content/10.1101/2023.11.08.566262v1) by Thomas Darveniza, Shuyu I Zhu, Zac Pujic, Biao Sun, Matthew Levendosky, Robert Wong, Ramesh Agarwal, Michael H McCullough, Geoffrey J Goodhill for more information.
 
 ## Overview
@@ -9,7 +9,7 @@ To facilitate use of this CFD software by others, we demonstrate how to run a ra
 
 ## Preprocessing
 Preprocess the swim bout according to steps described in the paper.
-Following successful preprocessing, the swim bout should be in a similar form to /simulation/zebrafish_2D_coords.txt. (To better understand this form, run the script preprocess/preSimVis.m)
+Following successful preprocessing, the swim bout should be in a similar form to [`simulation/zebrafish_2D_coords.txt`](simulation/zebrafish_2D_coords.txt). To better understand this form, run the script [`preprocess/preSimVis.m`](preprocess/preSimVis.m).
 
 ## Simulation
 
@@ -19,7 +19,7 @@ See [simulation/README.md](simulation/README.md)
 1. Following successful simulation, there should be two new folders: `ZFISH3d`, and `examplespline.txt`.
 	+ `ZFISH3d` contains various IBAMR outputs, including power expenditure
 	+ `examplespline.txt` contains tracking points on the 3D fish during simulation, which is used during validation
-2. Navigate to `postprocess/postprocess.m`, and run the post-processing functions
+2. Navigate to [`postprocess/postprocess.m`](postprocess/postprocess.m), and run the post-processing functions
 
 ## Requirements
 
