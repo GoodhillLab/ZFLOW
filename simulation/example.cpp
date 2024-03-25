@@ -30,9 +30,10 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 // Config files
-#include <IBAMR_config.h>
-#include <IBTK_config.h>
+// #include <IBAMR_config.h>
+// #include <IBTK_config.h>
 
+#include <map>
 #include <SAMRAI_config.h>
 
 // Headers for basic PETSc functions
@@ -269,10 +270,17 @@ int main(int argc, char* argv[])
             std::cout << "Failed to read a value from the file." << std::endl;
         }
         input_file.close();
+
+
         //determine swim bladder tracker!
-        const int numAges = 3; // Size of the array; we use 5, 9, and 14 dpf fish models
-        const int vertexArray[numAges] = {7685,8158,9736}; // Manual filling of the array. These are vertices in the 3D models approximately near the swim bladder
-        const int bladderTracker = vertexArray[fishAge];
+        // Manual filling of the array. These are vertices in the 3D models approximately near the swim bladder
+        // we use 5, 9, and 14 dpf fish models
+        std::map<int, int> vertex_map = {
+            {5, 7685},
+            {9, 8158},
+            {14, 9736}
+        };
+        const int bladderTracker = vertex_map[fishAge];
 
         // Main time step loop.
         double loop_time_end = time_integrator->getEndTime();
