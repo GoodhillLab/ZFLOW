@@ -1,5 +1,5 @@
-PROJECT(zebrafish3d)
 CMAKE_MINIMUM_REQUIRED(VERSION 3.15.0)
+PROJECT(zebrafish3d)
 
 # List your source files here - this example has just one.
 SET(SOURCE_FILES example.cpp IBZebraFishKinematics3d.cpp)
