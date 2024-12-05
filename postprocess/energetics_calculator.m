@@ -1,7 +1,7 @@
-function [E_tot] =  energetics_calculator()
+function E_tot =  energetics_calculator(fname)
 %% This function loads the CFD power expenditure outputs, computes the total power expenditure, and computes the total energy usage
 %% Load the simulation power data
-ibamr_power=load('/ZFISH3d/Eel3d_Power_spent_struct_no_0');
+ibamr_power=load(fname);
 %% Extract power
 timeColumn = 1;
 noiseOFF = 10; %Small offset to exclude spurious power noise near end of simulation
