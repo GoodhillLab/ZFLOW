@@ -421,12 +421,12 @@ print_eul_data(ofstream& file, Pointer<PatchHierarchy<NDIM>> patch_hierarchy,
             const int petsc_idx = node->getLocalPETScIndex();
             Eigen::Map<VectorNd> X(&x_vals[petsc_idx * NDIM]);
             //file.open ("example.txt",std::ios_base::app);
-            file << X[0] << " " <<  X[1] << " " << X[2] << " " << 1 << "\n";   //'1' in the fourth column indicates the row is plotting the eye midpoint position
+            file << X[0] << " " <<  X[1] << " " << X[2] << " " << 1 << "\n";   //'1' in the fourth column indicates the column is plotting the eye midpoint position
             //file.close();
         } else if (lag_idx == bladderTracker) {
             const int petsc_idx = node->getLocalPETScIndex();
             Eigen::Map<VectorNd> X(&x_vals[petsc_idx * NDIM]);
-            file << X[0] << " " <<  X[1] << " " << X[2] << " " <<  2 << "\n";   //'2' in the fourth column indicates the row is plotting the swim bladder position
+            file << X[0] << " " <<  X[1] << " " << X[2] << " " <<  2 << "\n";   //'2' in the fourth column indicates the column is plotting the swim bladder position
         }
 
     }  
