@@ -23,7 +23,7 @@ See [simulation/README.md](simulation/README.md)
 
 ## Requirements
 
-This code requires MATLAB (tested on R2021b&ndash;R2023b) for the pre/postprocessing, `make` or `cmake` and [IBAMR](https://ibamr.github.io) library (tested on 0.{8,9,13,14}.0, currently 0.14.0 is used) for the main CFD simulation.
+This code requires MATLAB (tested on R2021b&ndash;R2023b) for the pre/postprocessing, `make` or `cmake` and [IBAMR](https://ibamr.github.io) library (tested on 0.{8,9,13,14,15}.0, currently 0.15.0 is used) for the main CFD simulation.
 
 ## Contact
 Thomas Darveniza darveniza.t@wustl.edu
