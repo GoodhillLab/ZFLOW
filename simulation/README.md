@@ -7,10 +7,10 @@
 
 # Files
 
-- `zebrafish_2D_coords.txt` &mdash; tracked fish coordinates
-- `input3d` &mdash; IBAMR parameters
-- `heading_angle.txt` &mdash; fish heading angle
-- `eel3d.vertex` &mdash; point cloud of an example fish
+- `zebrafish_2D_coords.txt`&mdash;tracked fish coordinates
+- `input3d`&mdash;IBAMR parameters
+- `heading_angle.txt`&mdash;fish heading angle
+- `eel3d.vertex` and `stacked.txt`&mdash;point cloud of an example fish
 
 # Contact
 
